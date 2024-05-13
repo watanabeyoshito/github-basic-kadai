@@ -1,0 +1,51 @@
+Last login: Mon May 13 20:11:19 on ttys006
+watanabeyoshihito@watanabeyoshihitonoMacBook-Pro ~ % cd Desktop
+watanabeyoshihito@watanabeyoshihitonoMacBook-Pro Desktop % mkdir git_challenge 
+watanabeyoshihito@watanabeyoshihitonoMacBook-Pro Desktop % cd git_challenge
+watanabeyoshihito@watanabeyoshihitonoMacBook-Pro git_challenge % echo "Hello, world!" >>hello_world.txt
+dquote> 
+watanabeyoshihito@watanabeyoshihitonoMacBook-Pro git_challenge % echo "Hello, world >> hello_world.txt
+dquote> 
+watanabeyoshihito@watanabeyoshihitonoMacBook-Pro git_challenge % ls
+watanabeyoshihito@watanabeyoshihitonoMacBook-Pro git_challenge % echo "Hello, world" >> hello_world.txt
+watanabeyoshihito@watanabeyoshihitonoMacBook-Pro git_challenge % ls
+hello_world.txt
+watanabeyoshihito@watanabeyoshihitonoMacBook-Pro git_challenge % git init
+Initialized empty Git repository in /Users/watanabeyoshihito/Desktop/git_challenge/.git/
+watanabeyoshihito@watanabeyoshihitonoMacBook-Pro git_challenge % git add .
+watanabeyoshihito@watanabeyoshihitonoMacBook-Pro git_challenge % git commit -m "heiio_world.txtを追加"         
+
+[main (root-commit) 7ea8be5] heiio_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+watanabeyoshihito@watanabeyoshihitonoMacBook-Pro git_challenge % git commit -m "日本語訳を追記"       
+
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   hello_world.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+watanabeyoshihito@watanabeyoshihitonoMacBook-Pro git_challenge % git add .
+watanabeyoshihito@watanabeyoshihitonoMacBook-Pro git_challenge % git commit -m "日本語訳を追記"
+
+[main 306a6e7] 日本語訳を追記
+ 1 file changed, 1 insertion(+)
+watanabeyoshihito@watanabeyoshihitonoMacBook-Pro git_challenge % git status
+
+On branch main
+nothing to commit, working tree clean
+watanabeyoshihito@watanabeyoshihitonoMacBook-Pro git_challenge % git log
+commit 306a6e72a6a328740e6c5e0b5783d4a438e3b177 (HEAD -> main)
+Author: watanabeyoshito <yoshito1003pd@gmail.com>
+Date:   Mon May 13 23:21:17 2024 +0900
+
+    日本語訳を追記
+
+commit 7ea8be518aea531cdc43c228a170e7984ec12313
+Author: watanabeyoshito <yoshito1003pd@gmail.com>
+Date:   Mon May 13 23:16:38 2024 +0900
+
+    heiio_world.txtを追加
+watanabeyoshihito@watanabeyoshihitonoMacBook-Pro git_challenge % 
